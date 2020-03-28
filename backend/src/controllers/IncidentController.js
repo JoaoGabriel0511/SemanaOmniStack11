@@ -11,6 +11,7 @@ module.exports = {
             .offset((page - 1) * 5)
             .select([
                 'incidents.*',
+                'incidents.name as title',
                 'ongs.name',
                 'ongs.email',
                 'ongs.whatsapp',
